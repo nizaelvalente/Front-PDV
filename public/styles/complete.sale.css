@@ -1,0 +1,109 @@
+.modal-complete-sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--surface-modal);
+    z-index: 1003;
+    display: none;
+}
+
+.modal-complete-sale-visible {
+    display: grid;
+    place-content: center;
+}
+
+.complete-sale {
+    border: solid 1px var(--border-primary);
+    border-radius: 5px;
+    background-color: var(--surface-primery);
+}
+
+.header-complete-sale {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    border-bottom: solid 1px var(--border-primary);
+    background-color: var(--surface-focus);
+    border-radius: 5px 5px 0 0;
+}
+
+.window-buttons-complete-sale {
+    display: flex;
+    align-items: center;
+}
+
+.btn-window-complete-sale {
+    background-color: var(--surface-primery);
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    margin-left: 5px;
+}
+
+.body-complete-sale {
+    padding: 10px;
+}
+
+.type-pay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid 1px var(--border-primary);
+    margin-bottom: 5px;
+}
+
+.type-pay:hover {
+    background-color: var(--surface-focus);
+}
+
+.in-type-pay {
+    padding: 5px 10px;
+    background-color: var(--surface-hover);
+    font-size: 25px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.complete-sale-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid 1px var(--border-primary);
+    margin-bottom: 5px;
+}
+
+.complete-sale-box > h2 {
+    font-weight: 300;
+}
+
+.complete-sale-button-box {
+    display: flex;
+    align-items: center;
+}
+.btn-action-complete-sale {
+    width: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    background-color: var(--surface-hover);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn-action-complete-sale:hover {
+    background-color: var(--surface-focus);
+    color: var(--text-hover);
+}
+
+.btn-action-complete-sale:hover .material-icons {
+    color: var(--text-hover);
+}

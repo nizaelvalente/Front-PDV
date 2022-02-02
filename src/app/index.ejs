@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/sales.page.css">
+    <link rel="stylesheet" href="/styles/sell.page.css">
+    <link rel="stylesheet" href="/styles/select.customer.css">
+    <link rel="stylesheet" href="/styles/success.transaction.css">
+    <link rel="stylesheet" href="/styles/complete.sale.css">
+    <!-- 
+    <link rel="stylesheet" href="/styles/modal.sell.css"> 
+-->
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <aside>
+        <nav class="page-selection-menu">
+            <div class="page-selector">
+                <input type="radio" class="active-page" name="active-page" checked id="active-sales-page">
+                <label class="caption-active-page" for="active-sales-page">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="caption-page-selector">Vendas</span>
+                </label>
+                <%- include('./views/sales.page.ejs') %>
+            </div>
+            <div class="page-selector">
+                <input type="radio" class="active-page" name="active-page" id="active-products-page">
+                <label class="caption-active-page" for="active-products-page">
+                    <span class="material-icons">inventory</span>
+                    <span class="caption-page-selector">Produtos</span>
+                </label>
+            </div>
+            <div class="page-selector">
+                <input type="radio" class="active-page" name="active-page" id="active-budget-page">
+                <label class="caption-active-page" for="active-budget-page">
+                    <span class="material-icons">view_list</span>
+                    <span class="caption-page-selector">Orçamentos</span>
+                </label>
+            </div>
+            <div class="page-selector">
+                <input type="radio" class="active-page" name="active-page" id="active-customers-page">
+                <label class="caption-active-page" for="active-customers-page">
+                    <span class="material-icons">people</span>
+                    <span class="caption-page-selector">Clientes</span>
+                </label>
+            </div>
+            <div class="page-selector">
+                <input type="radio" class="active-page" name="active-page" id="active-users-page">
+                <label class="caption-active-page" for="active-users-page">
+                    <span class="material-icons">badge</span>
+                    <span class="caption-page-selector">Usuários</span>
+                </label>
+            </div>
+            <div class="page-selector">
+                <input type="radio" class="active-page" name="active-page" id="active-cash-page">
+                <label class="caption-active-page" for="active-cash-page">
+                    <span class="material-icons">point_of_sale</span>
+                    <span class="caption-page-selector">Caixa</span>
+                </label>
+            </div>
+        </nav>
+    </aside>
+
+<%- include('./views/sell.page.ejs') %>
+<%- include('./components/select.customer.ejs') %>
+<%- include('./components/success.transaction.ejs') %>
+<%- include('./components/complete.sale.ejs') %>
+<script src="/scripts/sales.page.js"></script>
+<script src="/scripts/sell.page.js"></script>
+<script src="/scripts/select.customer.js"></script>
+</body>
+
+</html>

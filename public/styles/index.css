@@ -1,0 +1,95 @@
+:root {
+    --surface-primery: rgb(19, 19, 19);
+    --surface-hover: rgb(26, 26, 26);
+    --surface-focus: rgb(49, 49, 49);
+    --text-primery: rgb(211, 211, 211);
+    --text-hover: rgb(255, 255, 255);
+    --border-primary: rgb(211, 211, 211, .5);
+    --border-focus: green;
+    --surface-modal: rgba(19, 19, 19, 0.5) ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    color: var(--text-primery);
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--surface-primery);
+}
+
+.page-selection-menu {
+    width: 40px;
+    border-right: solid 1px var(--border-primary);
+    height: 100vh;
+}
+
+.caption-active-page {
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    position: relative;
+    border: solid 3px transparent;
+}
+
+.active-page {
+    display: none;
+}
+
+.active-page:checked~.caption-active-page {
+    border-left-color: var(--border-focus);
+    background-color: var(--surface-focus);
+}
+.active-page:checked~.page-section {
+    display: block;
+}
+.caption-active-page:hover .caption-page-selector {
+    display: block;
+}
+
+.caption-active-page:hover {
+    background-color: var(--surface-hover);
+    color: var(--text-hover);
+}
+
+.caption-active-page:hover .material-icons {
+    color: var(--text-hover);
+}
+
+.caption-page-selector {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(5px, -50%);
+    padding: 5px 5px 5px 10px;
+    background-color: var(--surface-focus);
+    border-radius: 5px;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 5% 70%, 0 50%, 5% 30%);
+}
+
+.page-section {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: calc(100vw - 40px);
+    height: 100vh;
+    display: none;
+}
+
+.material-icons {
+    pointer-events: none;
+}
+
+.icon-modal{
+    font-size: 50px;
+}

@@ -1,0 +1,134 @@
+.sell-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--surface-primery);
+    overflow: hidden;
+    z-index: 1002;
+    border: solid 1px var(--border-primary);
+    display: none;
+}
+
+.sell-page-visible {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-sell-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--border-primary);
+    background-color: var(--surface-focus);
+}
+
+.sell-button-box {
+    flex-grow: 100;
+}
+
+.btn-window-sell {
+    background-color: var(--surface-primery);
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+}
+
+.sell-page-visible-max {
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.window-buttons-sell {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.sell-button-box {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.btn-action-sell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 112px;
+    background-color: var(--surface-primery);
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.btn-action-sell:hover {
+    color: var(--text-hover);
+    background-color: var(--surface-hover);
+}
+
+.btn-action-sell:hover>.material-icons {
+    color: var(--text-hover);
+}
+
+.sell-in-box {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.in-sell {
+    background-color: var(--surface-focus);
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    flex-grow: 100;
+}
+
+.shopping-bag {
+    flex: 100;
+    padding: 5px 10px;
+    overflow: auto;
+}
+
+.item-bag {
+    border-radius: 5px;
+    background-color: var(--surface-hover);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+.item-bag:hover {
+    background-color: var(--surface-focus);
+}
+
+.item-bag>span {
+    width: 180px;
+}
+
+.item-bag>span:nth-child(1) {
+    flex-grow: 100;
+}
+
+.total-pay {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.footer-sell {
+    padding: 5px 10px;
+    text-align: end;
+}
+
+
+
+
+
+
