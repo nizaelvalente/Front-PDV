@@ -9,6 +9,7 @@ server.use(express.json())
 
 server.use('/', require('./app/routes/index.routes.js'))
 server.listen(3000, () => {
-  console.log('Servidor Ativo!')
-  console.log('http://localhost:3000')
+  console.clear()
+  console.log('Servidor Ativo! \n')
+  console.log('\x1b[36m%s\x1b[0m', 'http://localhost:3000')
 })
