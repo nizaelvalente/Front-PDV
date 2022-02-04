@@ -5,7 +5,6 @@ buttonActionSell.forEach(btn => {
             const selectCustomer = document.getElementById('modal-select-customer')
             selectCustomer.classList.add('modal-select-customer-visible')
         }
-
         if (btn.value === 'conclude_sale') {
             const concludeSale = document.getElementById('modal-complete-sale')
             concludeSale.classList.add('modal-complete-sale-visible')
@@ -34,11 +33,12 @@ let totalPay = 0,
     amountReceived = 0,
     transactionType = 'sale',
     productList = [],
-    discountAmount0,
+    discountAmount=0,
     type = 'product',
     seller = 'Valente',
     cashier = 'Valente',
     deliveryDate = new Date(),
     customer = 'Anomimo',
     observation = '',
-    commissionAmount = 0
+    commissionAmount = 0,
+    status='Okay'
